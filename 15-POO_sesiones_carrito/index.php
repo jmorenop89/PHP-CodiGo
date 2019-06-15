@@ -1,3 +1,10 @@
+<?php 
+    session_start();
+    #var_dump($_SESSION);
+    if(count($_SESSION) > 0){
+        header('location:carrito.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

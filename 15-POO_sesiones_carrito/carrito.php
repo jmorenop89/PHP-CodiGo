@@ -27,6 +27,11 @@
             <td>Apellido: </td> 
             <td><?php echo $_SESSION['usuario']['apellido'] ?></td>
         </tr>
+        <tr>
+            <td colspan="2">
+                <a href="cerrarSesion.php">Cerrar Sesión</a>
+            </td>
+        </tr>
     </table>
     <hr>
     <h2>Productos</h2>
@@ -49,7 +54,8 @@
             <td><?php echo $producto->cantidad ?></td>
             <td><?php echo $producto->subtotal()?></td>
         </tr>
-        <?php $total = $total + $producto->subtotal(); }?>
+        <?php $total = $total + $producto->subtotal();?>
+        <?php }?>
         <tr>
             <td colspan="4"></td>
             <td><?php echo $total ?></td>

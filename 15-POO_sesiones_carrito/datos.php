@@ -1,6 +1,8 @@
 <?php
     // session_start() : Sirve para iniciar la sesion
     session_start();
+    //Regenero el id de sesion
+    session_regenerate_id();
     // usar el matriz global $_SESSION para almacenar los datos
     $_SESSION['usuario']['nombre'] = $_POST['nombre'];
     $_SESSION['usuario']['apellido'] = $_POST['apellido'];
